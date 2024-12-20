@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Projects | Electreus
+{% endblock %}
+
+{% block content %}
+  <section class="project">
+    <div class="project-section text-white d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <h1 class="display-4" style="font-size: 42px; font-weight: 500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); color: white;"><b>OUR PROJECTS</b></h1>
+      </div>
+    </div>
+  </section>
+
+  <br />
+  <br />
+
+  <section class="project">
+    <div class="container welcome-container">
+      <h1 style="font-weight: 600;"><b>PROJECTS</b> THAT DEFINE US</h1>
+      <p style="color: #262626; line-height: 1.8;">Electreus Engineers and Contractors is a premier engineering and construction firm dedicated to delivering top-tier projects that meet both quality and budgetary requirements. With a team of skilled professionals, we specialize in offering innovative solutions for residential and commercial developments. Our commitment to excellence is demonstrated through our meticulous attention to detail, timely project delivery, and strict adherence to safety standards. At Electreus, we focus on building lasting relationships with clients, grounded in trust, integrity, and exceptional service. Whether it's design, engineering, or construction, we take pride in transforming ideas into reality, ensuring each project is completed with precision and care. Our mission is to be a reliable partner for all your construction needs, delivering results that exceed expectations.</p>
+    </div>
+  </section>
+
+  <section class="section-projects">
+    <div class="section-projects-container container py-5">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('noel')">
+            <div class="section-projects-image">
+              <img src="static/images/Noel/Noel6.jpeg" alt="Noel Flat, Kochi" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Noel Flat, Kochi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('hyundai')">
+            <div class="section-projects-image">
+              <img src="static/images/Hyundai/Hyundai4.jpeg" alt="Chungath Sprise Hyundai, Kollam" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Chungath Sprise Hyundai, Kollam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('dlife')">
+            <div class="section-projects-image">
+              <img src="static/images/Dlife/Dlife3.jpeg" alt="D'LIFE Office, Kollam" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>D'LIFE Office, Kollam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('sncorporate')">
+            <div class="section-projects-image">
+              <img src="static/images/SN corporate/SN corporate2.jpeg" alt="SN Corporate Office, Kollam" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>SN Corporate Office, Kollam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('glamora')">
+            <div class="section-projects-image">
+              <img src="static/images/Glamora/Glamora7.jpeg" alt="Glamora Unisex Beauty Concepts" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Glamora Unisex Beauty Concepts</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('atrium')">
+            <div class="section-projects-image">
+              <img src="static/images/Atrium/Atrium2.jpeg" alt="Atrium Experience Centre, Kollam" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Atrium Experience Centre, Kollam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('ibwis')">
+            <div class="section-projects-image">
+              <img src="static/images/Ibwis/Ibwis1.jpeg" alt="Ibwis Supermarket" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Ibwis Supermarket</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('snkids')">
+            <div class="section-projects-image">
+              <img src="static/images/SN kids/SN kids11.jpeg" alt="SN Kids International School, Kollam" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>SN Kids International School, Kollam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('taurus')">
+            <div class="section-projects-image">
+              <img src="static/images/Taurus/Taurus1.jpeg" alt="TAURUS Sports Club, Kollam" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>TAURUS Sports Club, Kollam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('prince')">
+            <div class="section-projects-image">
+              <img src="static/images/Hotel Prince/Hotel Prince 2.jpeg" alt="Hotel Prince, Aalapuzha" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Hotel Prince, Aalapuzha</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('jajis')">
+            <div class="section-projects-image">
+              <img src="static/images/JAJIS/JAJIS2.jpeg" alt="JAJIS Express Salon, Karunagapalli" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>JAJIS Express Salon, Karunagapalli</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('doctor')">
+            <div class="section-projects-image">
+              <img src="static/images/Doctor/Doctor1.jpeg" alt="Dr. Sooraj Residence" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Dr. Sooraj Residence</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('amrita')">
+            <div class="section-projects-image">
+              <img src="static/images/Amrita/Amrita1.jpeg" alt="AMRITA Hospital, Mother & Child Block, Kochi" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>AMRITA Hospital, Mother & Child Block, Kochi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('snayurveda')">
+            <div class="section-projects-image">
+              <img src="static/images/SN ayurveda/SN ayurveda4.jpeg" alt="SN Ayurveda Medical College, Puthoor" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>SN Ayurveda Medical College, Puthoor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Image Modal Overlay -->
+  <div id="section-projects-overlay" class="section-projects-overlay">
+    <div class="section-projects-overlay-content">
+      <span id="section-projects-close-overlay" class="section-projects-close-overlay">&times;</span>
+      <div id="section-projects-image-container" class="section-projects-image-container"></div>
+    </div>
+  </div>
+{% endblock %}

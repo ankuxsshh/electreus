@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Home | Electreus
+      {% endblock %}
+    </title>
+
+    <!-- Favicon link -->
+    <link rel="icon" href="static/images/logo.png" type="image/png" />
+
+    <!-- CSS and Fonts -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Transparent Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light fade-up-section">
+      <div class="container fade-up-section">
+        <!-- Logo placed on the left -->
+        <a class="navbar-brand fade-up-section" href="home"><img src="static/images/logo.png" alt="Electreus Logo" class="navbar-logo" /></a>
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- Collapsible menu for links -->
+        <div class="collapse navbar-collapse fade-up-section" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index' %}">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'projects' %}">OUR PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- WhatsApp and Call Buttons -->
+    <div class="fixed-buttons fade-up-section">
+      <a href="tel:+919895533884" class="btn-whatsapp-pulse call-button" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://wa.me/+919895533884" class="btn-whatsapp-pulse whatsapp-button" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="text-white text-center py-5 mt-auto fade-up-section">
+      <div class="container fade-up-section">
+        <div class="row justify-content-center align-items-stretch fade-up-section">
+          <!-- About Us Section -->
+          <div class="col-md-3 mb-2 fade-up-section d-flex flex-column">
+            <h5 class="footer-heading">Address</h5>
+            <br />
+            <p class="footer-text">
+              <b>KOLLAM</b> - No.7 Kesavan Nagar, Mundakkal West, Kollam
+            </p>
+            <p class="footer-text">
+              <b>ERNAKULAM</b> - IIV/523C, Oorampalli Buildings, Kochi
+            </p>
+            <p class="footer-text">
+              <b>TRIVANDRUM</b> - SP-3/183, Seasons, Sreekariyam P.O.Trivandrum
+            </p>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div class="col-md-3 mb-2 fade-up-section d-flex flex-column">
+            <h5 class="footer-heading">Contact Us</h5>
+            <br />
+            <p class="footer-text">
+              <i class="fa fa-envelope"></i> electreus2k20@gmail.com
+            </p>
+            <br />
+            <p class="footer-text">
+              <i class="fa fa-envelope"></i> vishnuay1@gmail.com
+            </p>
+            <br />
+            <p class="footer-text">
+              <i class="fa fa-phone"></i> +91 9895533884
+            </p>
+          </div>
+
+          <!-- Follow Us Section -->
+          <div class="col-md-3 mb-2 fade-up-section d-flex flex-column">
+            <h5 class="footer-heading">Follow Us</h5>
+            <br />
+            <div class="social-icons-row">
+              <a href="https://www.facebook.com/share/o7KqtDaqFADu24LP/?mibextid=LQQJ4d" class="text-white mx-2 social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/electreus_?igsh=emFhN2NqMmI4NWFj" class="text-white mx-2 social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <br />
+            <div class="social-icons-row">
+              <a href="https://www.youtube.com/channel/UC_3itpuR_vIIcZkYBWLnBzQ" class="text-white mx-2 social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="https://in.linkedin.com/in/electreus-electrical-consultancy-033621332" class="text-white mx-2 social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 bg-light border" />
+
+        <p class="mb-0" style="color: rgb(39, 31, 156);">
+          © 2020 Electreus. All rights reserved. | Designed and Developed by <a href="https://inspirezesttechnologies.com/" style="color: #0044ff !important; text-decoration: none;"><b>InspireZest Technologies Pvt Ltd</b></a>
+        </p>
+      </div>
+    </footer>
+
+    <script></script>
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link to Custom JS -->
+    <script src="static/js/main.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/count.js"></script>
+    <script src="static/js/brands.js"></script>
+    <script src="static/js/overlay.js"></script>
+    <script src="static/js/clients.js"></script>
+    <script src="static/js/experience.js"></script>
+    <script src="static/js/fade.js"></script>
+  </body>
+</html>
