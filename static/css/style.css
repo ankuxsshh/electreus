@@ -34,38 +34,32 @@ html {
 
 /* Transparent Navbar */
 .navbar {
-    /* background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.617), rgb(0, 0, 0)); */
-    height: 100px;
+    height: 90px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.778);
     display: flex;
     align-items: center;
-    /* Center the content vertically */
 }
 
-/* Logo styling inside the navbar */
 .navbar .navbar-brand {
     display: flex;
     align-items: center;
-    height: 100%;
-    height: 100px;
 }
 
 .navbar-logo {
     height: 130px;
-    /* Adjust logo height */
     width: auto;
 }
 
 /* Navbar links styling */
 .navbar .nav-link {
     color: rgb(255, 255, 255) !important;
-    transition: color 0.3s ease;
-    margin: 0 40px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 20px;
     text-align: center;
     font-weight: 600;
 }
 
-/* Navbar links hover effect */
 .navbar .nav-link:hover {
     color: #3268ff !important;
     transform: scale(1.12);
@@ -79,7 +73,6 @@ html {
 
 .navbar.scrolled .nav-link {
     color: #0034c4 !important;
-    font-weight: 600;
 }
 
 .navbar.scrolled .nav-link:hover {
@@ -87,16 +80,14 @@ html {
     transform: scale(1.12);
 }
 
-/* Responsive styling for mobile view */
+/* Mobile responsive styling */
 @media (max-width: 991.98px) {
     .navbar {
-        height: 120px;
-        /* Adjust navbar height for mobile view */
+        height: auto;
     }
 
     .navbar .navbar-brand .navbar-logo {
         height: 110px;
-        /* Adjust logo size for mobile */
     }
 
     .navbar-nav {
@@ -105,15 +96,44 @@ html {
     }
 
     .navbar .nav-link {
-        margin: 5px 0;
-        font-weight: 500;
+        margin: 10px 0;
     }
 
     .navbar-toggler {
         margin-top: 5px;
-        /* Adjust the toggle button position for mobile */
+        background-color: #ffffff1c;
+    }
+
+
+    .collapse.show .nav-link {
+        color: rgb(255, 255, 255) !important;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .collapse.show .nav-link:hover {
+        color: black !important;
+        transform: scale(1.12);
+    }
+
+    .navbar.scrolled .nav-link {
+        color: rgb(0, 0, 0) !important;
+        transform: scale(1.12);
     }
 }
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* Ensure images in the carousel fit well and apply zoom effect */
 .carousel-item img {
@@ -1692,4 +1712,54 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* Loader Styles */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.loader-overlay.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader-icon {
+    font-size: 4rem;
+    color: #0044ff !important;
+    animation: spin 1s linear infinite;
+}
+
+.loader-logo {
+    height: 150px;
+    width: 150px;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
