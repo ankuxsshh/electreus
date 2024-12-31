@@ -100,10 +100,11 @@ html {
     }
 
     .navbar-toggler {
-        margin-top: 5px;
-        background-color: #ffffff1c;
+        margin: 5px;
+        border-radius: 0px;
+        border: none;
+        background-color: #4a4a4a31;
     }
-
 
     .collapse.show .nav-link {
         color: rgb(255, 255, 255) !important;
@@ -146,11 +147,16 @@ html {
 
 /* Zoom animation */
 @keyframes zoomEffect {
-    0%, 100% {
-        transform: scale(1); /* Normal size */
+
+    0%,
+    100% {
+        transform: scale(1);
+        /* Normal size */
     }
+
     50% {
-        transform: scale(1.1); /* Slight zoom */
+        transform: scale(1.1);
+        /* Slight zoom */
     }
 }
 
@@ -182,7 +188,8 @@ html {
     }
 
     .carousel-caption {
-        top: 70%; /* Move caption lower for better visibility */
+        top: 70%;
+        /* Move caption lower for better visibility */
         transform: translate(-50%, -70%);
     }
 
@@ -202,10 +209,12 @@ html {
 
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 60%; /* Move caption further lower for small screens */
+        top: 60%;
+        /* Move caption further lower for small screens */
         transform: translate(-50%, -75%);
         padding: 1rem;
-        width: 90%; /* Restrict text width */
+        width: 90%;
+        /* Restrict text width */
     }
 
     .carousel-caption h5 {
@@ -1862,6 +1871,7 @@ body {
     background-color: #e8f4ff;
     border-radius: 0px;
     text-align: center;
+    margin-bottom: 10px;
     padding: 20px;
 }
 
