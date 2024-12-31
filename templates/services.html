@@ -5,13 +5,15 @@
 {% endblock %}
 
 {% block content %}
-  <section>
-    <div class="service-section text-white d-flex justify-content-center align-items-center">
-      <div class="container text-center">
-        <h1 class="display-4" style="font-size: 42px; font-weight: 500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); color: white;"><b>SERVICES</b></h1>
-      </div>
+
+<section>
+  <div class="about-section text-white d-flex justify-content-center align-items-center position-relative">
+    <img src="static/images/services_banner.jpeg" alt="About Us Banner" class="about-background">
+    <div class="container text-center position-absolute w-100">
+      <h1 class="display-4" style="font-size: 42px; font-weight: 600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); color: white;"><b>SERVICES</b></h1>
     </div>
-  </section>
+  </div>
+</section>
 
   <br /><br /><br />
 
@@ -104,8 +106,8 @@
     <div class="container fade-up-section">
       <div class="position-relative fade-up-section">
         <!-- Image -->
-        <img src="https://www.mobelinteriors.in/images/1700736745-img1-banner.jpg" class="img-fluid w-100" alt="Electrician working with wires" style="filter: brightness(0.5);" />
-
+        <img src="static/images/households.jpeg" class="img-fluid w-100" alt="Electrician working with wires" style="filter: brightness(0.4);" />
+  
         <!-- Overlay Text -->
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white fade-up-section">
           <h2 class="banner-heading">WE HELP HOUSEHOLDS AND COMPANIES WITH THEIR ELECTRIC NEEDS.</h2>
@@ -118,38 +120,38 @@
   <section>
     <div class="container mt-5 fade-up-section">
       <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff;">OUR WORKING PROCESS</h6>
-      <p class="text-justify" style="line-height: 1.8;">We ensure excellent value for our customers by delivering quality electrical work for residential and commercial buildings. Our process includes planning, wiring, installation, and testing, all carried out under the supervision of licensed professionals. Trust our expertise to ensure safe, efficient, and compliant electrical systems for your construction project.</p>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card process-card" data-card-index="1">
-            <div class="card-img-container">
+      <p class="text-justify fade-up-section" style="line-height: 1.8;">We ensure excellent value for our customers by delivering quality electrical work for residential and commercial buildings. Our process includes planning, wiring, installation, and testing, all carried out under the supervision of licensed professionals. Trust our expertise to ensure safe, efficient, and compliant electrical systems for your construction project.</p>
+      <div class="row g-4 fade-up-section">
+        <div class="col-md-4 fade-up-section">
+          <div class="card process-card fade-up-section" data-card-index="1">
+            <div class="card-img-container fade-up-section">
               <img src="https://img-c.udemycdn.com/course/750x422/3312516_73d4_3.jpg" class="card-img-top" alt="Process 1" />
             </div>
             <div class="card-body text-center">
               <h5 class="card-title" style="font-size: 16px;">PLANNING AND STRATEGY</h5>
-              <button class="btn btn-primary btn-block" style="width: 160px; background-color: grey; border: none;">Know more. . .</button>
+              <a class="" style="text-decoration: none;">Know more</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 fade-up-section">
           <div class="card process-card" data-card-index="2">
             <div class="card-img-container">
               <img src="https://images.wondershare.com/edrawmax/article2023/wiring-diagrams/electrical-wiring-diagram-basics.jpg" class="card-img-top" alt="Process 2" />
             </div>
             <div class="card-body text-center">
               <h5 class="card-title" style="font-size: 16px;">DESIGN AND DEVELOP</h5>
-              <button class="btn btn-primary btn-block" style="width: 160px; background-color: grey; border: none;">Know more. . .</button>
+              <a class="" style="text-decoration: none;">Know more</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 fade-up-section">
           <div class="card process-card" data-card-index="3">
             <div class="card-img-container">
               <img src="https://www.thelocalelectrician.com.au/wordpress/wp-content/uploads/Different-Types-Of-Electrical-Testing.png" class="card-img-top" alt="Process 3" />
             </div>
             <div class="card-body text-center">
               <h5 class="card-title" style="font-size: 16px;">TEST AND DELIVER</h5>
-              <button class="btn btn-primary btn-block" style="width: 160px; background-color: grey; border: none;">Know more. . .</button>
+              <a class="" style="text-decoration: none;">Know more</a>
             </div>
           </div>
         </div>
@@ -157,7 +159,7 @@
     </div>
 
     <!-- Overlay -->
-    <div id="overlay" class="overlay-container">
+    <div id="overlay" class="overlay-container fade-up-section">
       <div class="overlay-content">
         <div class="overlay-image" id="overlay-image"></div>
         <button class="close-btn" aria-label="Close" onclick="hideOverlay()">&times;</button>

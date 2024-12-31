@@ -36,7 +36,7 @@ html {
 .navbar {
     height: 90px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.778);
+    background-color: rgba(0, 0, 0, 0.946);
     display: flex;
     align-items: center;
 }
@@ -57,7 +57,7 @@ html {
     transition: color 0.3s ease, transform 0.3s ease;
     margin: 0 20px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .navbar .nav-link:hover {
@@ -134,29 +134,23 @@ html {
     }
 }
 
-
 /* Ensure images in the carousel fit well and apply zoom effect */
 .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: 100vh;
     filter: brightness(0.5);
-    animation: zoomEffect 10s ease-in-out infinite;
+    animation: zoomEffect 15s ease-in-out infinite;
     transform-origin: center;
 }
 
 /* Zoom animation */
 @keyframes zoomEffect {
-
-    0%,
-    100% {
-        transform: scale(1);
-        /* Normal size */
+    0%, 100% {
+        transform: scale(1); /* Normal size */
     }
-
     50% {
-        transform: scale(1.1);
-        /* Slight zoom */
+        transform: scale(1.1); /* Slight zoom */
     }
 }
 
@@ -169,8 +163,16 @@ html {
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.carousel-caption p2 {
+    font-size: 4.2rem;
+}
+
+.carousel-caption p {
+    font-size: 1.8rem;
 }
 
 /* Responsive adjustments */
@@ -179,22 +181,44 @@ html {
         height: 100vh;
     }
 
+    .carousel-caption {
+        top: 70%; /* Move caption lower for better visibility */
+        transform: translate(-50%, -70%);
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 60%; /* Move caption further lower for small screens */
+        transform: translate(-50%, -75%);
+        padding: 1rem;
+        width: 90%; /* Restrict text width */
+    }
+
     .carousel-caption h5 {
         font-size: 1.2rem;
     }
 
     .carousel-caption p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-caption h5 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
-    .carousel-caption p {
+    .carousel-caption a {
         font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
     }
 }
 
@@ -205,51 +229,26 @@ html {
     text-align: center;
 }
 
-/* WHATSAPP, CALL BUTTONS */
-
-.fixed-buttons {
-    position: fixed;
-    bottom: 40px;
-    right: 25px;
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
+/**Whatsapp button ***/
 .btn-whatsapp-pulse {
+    background: #25d366;
     color: white;
-    font-size: 2rem;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 0;
+    height: 0;
+    padding: 25px;
     text-decoration: none;
     border-radius: 50%;
-    position: relative;
-    animation: pulse 1.5s ease-out infinite;
-    transition: transform 0.3s ease-in-out;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.btn-whatsapp-pulse:hover {
-    transform: scale(1.1);
-}
-
-.btn-whatsapp-pulse i {
-    font-size: 22px;
-}
-
-.whatsapp-button {
-    background: #25d366;
-    border: 2px solid white;
-}
-
-.call-button {
-    background: #0f3f64;
-    border: 2px solid white;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
@@ -259,6 +258,42 @@ html {
 
     80% {
         box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+}
+
+.btn-whatsapp-pulse-border {
+    bottom: 110px;
+    right: 30px;
+    animation-play-state: paused;
+
+}
+
+.btn-whatsapp-pulse-border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -291,7 +326,7 @@ html {
 }
 
 .experience-description {
-    font-size: 18px;
+    font-size: 20px;
     color: #262626;
     line-height: 1.8;
     margin-top: 0;
@@ -464,7 +499,6 @@ footer .footer-text:hover {
 
 footer .fab {
     font-size: 2.3rem;
-    background-color: white;
     padding: 12px;
     height: 70px;
     width: 70px;
@@ -473,8 +507,8 @@ footer .fab {
 }
 
 footer .fab:hover {
-    color: rgb(39, 31, 156);
-    background-color: rgba(75, 67, 194, 0.1);
+    color: rgb(78, 101, 255);
+    background-color: rgb(241, 240, 255) !important;
     /* Add background hover effect */
     transform: scale(1.1);
     /* Scale effect */
@@ -644,7 +678,7 @@ footer .social-icon:hover {
 
 .text {
     color: white;
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
 }
@@ -663,12 +697,12 @@ footer .social-icon:hover {
     overflow: hidden;
     width: 100%;
     background-color: #f9f9f9;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .weprovide-cards-wrapper {
     display: flex;
-    animation: slide-left 400s linear infinite;
+    animation: slide-left 800s linear infinite;
     width: calc(300px * 15);
     /* Adjust based on the number of cards */
 }
@@ -677,7 +711,7 @@ footer .social-icon:hover {
 .weprovide-cards {
     flex: 0 0 auto;
     margin: 0 10px;
-    width: 200px;
+    width: 280px;
     height: 200px;
     text-align: center;
     background: #fff;
@@ -987,13 +1021,25 @@ footer .social-icon:hover {
 }
 
 .about-section {
-    background: url('https://liveyourhome.at/wp-content/uploads/2023/02/Interior-Design-Blog-2023-1024x576.png') no-repeat center center fixed;
-    background-size: cover;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
+
+.about-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
 
 .about-section .container {
     padding: 4rem;
@@ -1214,12 +1260,23 @@ footer .social-icon:hover {
 }
 
 .project-section {
-    background: url('https://kaizenaire.com/wp-content/uploads/2023/12/image-4266.jpeg') no-repeat center center fixed;
-    background-size: cover;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6);
 }
 
 /* Section-specific styles for the Projects section */
@@ -1448,13 +1505,24 @@ footer .social-icon:hover {
     }
 }
 
-.service-section {
-    background: url('https://www.modern.place/wp-content/uploads/2023/05/lighting-standards-for-offices-2.png') no-repeat center center fixed;
-    background-size: cover;
+.services-section {
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.services-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6);
 }
 
 .project-section .container {
@@ -1595,12 +1663,23 @@ body {
 
 
 .contact-section {
-    background: url('https://media.istockphoto.com/id/1134890323/photo/woman-using-smartphone-the-concept-of-using-the-phone-is-essential-in-everyday-life.jpg?b=1&s=612x612&w=0&k=20&c=hdF9-MA1VmJ1qjvr7-mobgu_9da7T6zfM1jtRflVCNw=') no-repeat center center fixed;
-    background-size: cover;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6);
 }
 
 
@@ -1743,14 +1822,14 @@ body {
 }
 
 .loader-icon {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #0044ff !important;
     animation: spin 1s linear infinite;
 }
 
 .loader-logo {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: auto;
 }
 
 
@@ -1762,4 +1841,90 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.profile-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.profile-cards .profile-card {
+    flex: 0 0 23%;
+    /* Each card takes 23% of the row */
+    margin-bottom: 0;
+}
+
+.profile-card {
+    background-color: #e8f4ff;
+    border-radius: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-card .card-number {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.profile-card .card-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .profile-cards .profile-card {
+        flex: 0 0 48%;
+        /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-cards .profile-card {
+        flex: 0 0 100%;
+        /* One card per row on extra small screens */
+    }
+}
+
+.custom-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: transparent;
+    /* Ensures consistent aspect ratio */
+}
+
+a.border-none {
+    display: inline-block;
+    /* Ensures the element behaves like a button */
+    background-color: white;
+    /* White background */
+    color: #000;
+    /* Black text for contrast */
+    font-size: 22px;
+    /* Set font size */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px 20px;
+    /* Add padding for a button-like appearance */
+    border: none;
+    /* Remove any border */
+    border-radius: 0px;
+    /* Add slight rounding to the edges */
+    text-align: center;
+    /* Center align text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth hover effect */
+    text-shadow: none;
+}
+
+a.border-none:hover {
+    background-color: #f0f0f0;
+    /* Slightly darker background on hover */
+    color: #007BFF;
+    /* Change text color on hover */
 }

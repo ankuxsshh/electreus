@@ -1,54 +1,45 @@
 {% extends 'base.html' %}Home | Electreus{% block content %}
-  <!-- Image Carousel (Slider) -->
-  <div id="carouselExampleAutoplay" class="carousel slide carousel-fade fade-up-section" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Second Slide -->
-      <div class="carousel-item active position-relative fade-up-section">
-        <img src="static/images/bg1.jpeg" class="d-block w-100 zoom-effect" alt="Slide 1" />
-        <!-- Text Overlay -->
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-light fade-up-section">ELECTRICAL SAFETY IS OUR TOP PRIORITY</h5>
-          <p class="text-light fade-up-section">HIGH TENSION & LOW TENSION INSTALLATIONS</p>
-        </div>
+
+<!-- Image Carousel (Slider) -->
+<div id="carouselExampleAutoplay" class="carousel slide carousel-fade fade-up-section" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Second Slide -->
+    <div class="carousel-item active position-relative fade-up-section">
+      <img src="static/images/bg1.jpeg" class="d-block w-100 zoom-effect" alt="Slide 1" />
+      <!-- Text Overlay -->
+      <div class="carousel-caption d-md-block">
+        <h5 class="text-light fade-up-section">WE PROVIDE OUR CLIENTS WITH AN EXCELLENT VALUE FOR THEIR INVESTMENT</h5>
+        <p2 class="text-light fade-up-section" style="font-weight: 1000;">
+          <strong>SAFETY</strong>
+        </p2>
+        <p class="text-light fade-up-section" style="font-weight: 300;">Isn't a choice</p>
+        <p class="text-light fade-up-section" style="font-weight: 300;">It's a Responsibility</p>
+        <a href="{% url 'projects' %}" class="btn btn-outline-light border-none mt-2">Discover more...</a>
       </div>
-      <!-- First Slide -->
-      <div class="carousel-item position-relative fade-up-section">
-        <img src="static/images/bg2.jpeg" class="d-block w-100 zoom-effect" alt="Slide 2" />
-        <!-- Text Overlay -->
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-light fade-up-section">PREMIUM QUALITY ELECTRICAL PRODUCTS AND WORKS</h5>
-          <p class="text-light fade-up-section">WE OFFER THE FINEST ELECTRICAL SOLUTIONS</p>
-        </div>
+    </div>
+    <!-- First Slide -->
+    <div class="carousel-item position-relative fade-up-section">
+      <img src="static/images/bg2.jpeg" class="d-block w-100 zoom-effect" alt="Slide 2" />
+      <!-- Text Overlay -->
+      <div class="carousel-caption d-md-block">
+        <h5 class="text-light fade-up-section">PREMIUM QUALITY ELECTRICAL PRODUCTS AND SERVICES</h5>
+        <p class="text-light fade-up-section">We Offer Professional Cost Effective Solutions</p>
+        <a href="{% url 'projects' %}" class="btn btn-outline-light border-none mt-2">Discover more...</a>
       </div>
-      <!-- Third Slide -->
-      <div class="carousel-item position-relative fade-up-section">
-        <img src="static/images/bg3.jpeg" class="d-block w-100 zoom-effect" alt="Slide 3" />
-        <!-- Text Overlay -->
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-light fade-up-section">INNOVATIVE ELECTRICAL SOLUTIONS FOR YOUR HOME</h5>
-          <p class="text-light fade-up-section">CUTTING EDGE TECHNOLOGY FOR YOUR HOME.</p>
-        </div>
-      </div>
-      <!-- Third Slide -->
-      <div class="carousel-item position-relative fade-up-section">
-        <img src="static/images/bg3.jpeg" class="d-block w-100 zoom-effect" alt="Slide 3" />
-        <!-- Text Overlay -->
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-light fade-up-section">ELECTRICAL SAFETY IS OUR TOP PRIORITY</h5>
-          <p class="text-light fade-up-section">HIGH TENSION & LOW TENSION INSTALLATIONS</p>
-        </div>
-      </div>
-      <!-- Third Slide -->
-      <div class="carousel-item position-relative fade-up-section">
-        <img src="static/images/bg3.jpeg" class="d-block w-100 zoom-effect" alt="Slide 3" />
-        <!-- Text Overlay -->
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-light fade-up-section">PREMIUM QUALITY ELECTRICAL PRODUCTS AND WORKS</h5>
-          <p class="text-light fade-up-section">WE OFFER THE FINEST ELECTRICAL SOLUTIONS</p>
-        </div>
+    </div>
+    <!-- Third Slide -->
+    <div class="carousel-item position-relative fade-up-section">
+      <img src="static/images/bg3.jpeg" class="d-block w-100 zoom-effect" alt="Slide 3" />
+      <!-- Text Overlay -->
+      <div class="carousel-caption d-md-block">
+        <h5 class="text-light fade-up-section">ELECTRICAL SAFETY IS OUR TOP PRIORITY</h5>
+        <p class="text-light fade-up-section">High Tension & Low Tension Installations</p>
+        <a href="{% url 'projects' %}" class="btn btn-outline-light border-none mt-2">Discover more...</a>
       </div>
     </div>
   </div>
+</div>
+
 
   <!-- EXPERIENCE SECTION -->
   <section class="experience-section py-5 fade-in" id="experienceSection">
@@ -117,9 +108,62 @@
     </div>
   </section>
 
+  <br />
+  <br />
+
+  <section>
+    <!-- Profile Cards Row -->
+    <div class="profile-cards fade-up-section">
+      <!-- Card 1 -->
+      <div class="profile-card bg-light fade-up-section">
+        <img src="static/icons/handshake.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">MOST RELIABLE ELECTRICAL COMPANY WITH EXPERIENCE OF 7+ YEARS</h5>
+      </div>
+      <!-- Card 2 -->
+      <div class="profile-card fade-up-section">
+        <img src="static/icons/shield.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">3 YEAR WARRANTY* LIFETIME SERVICE</h5>
+      </div>
+      <!-- Card 3 -->
+      <div class="profile-card bg-light fade-up-section">
+        <img src="static/icons/badge.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">100% GENUINE & PREMIUM MATERIALS</h5>
+      </div>
+      <!-- Card 4 -->
+      <div class="profile-card fade-up-section">
+        <img src="static/icons/parthenon.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">GOVERNMENT LICENSED COMPANY</h5>
+      </div>
+      <!-- Card 5 -->
+      <div class="profile-card fade-up-section">
+        <img src="static/icons/like.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">PERFECT WORK NO NEED OF MANUAL MAINTENANCE</h5>
+      </div>
+      <!-- Card 6 -->
+      <div class="profile-card bg-light fade-up-section">
+        <img src="static/icons/calendar.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">120+ PROJECTS COMPLETED</h5>
+      </div>
+      <!-- Card 7 -->
+      <div class="profile-card fade-up-section">
+        <img src="static/icons/training.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">25+ WELL TRAINED PERMANENT EMPLOYEES</h5>
+      </div>
+      <!-- Card 8 -->
+      <div class="profile-card bg-light fade-up-section">
+        <img src="static/icons/key.gif" alt="" class="img-fluid custom-image" />
+        <h5 class="card-title">TENSION FREE ON-TIME PROJECT HANDOVER</h5>
+      </div>
+    </div>
+  </section>
+
+  <br />
+  <br />
+  <br />
+
   <section class="client-cards-section">
-    <h6 class="text-center mb-4 client-cards-title">OUR PREMIUM CLIENTS</h6>
-    <p class="text-justify" style=" line-height: 1.8; margin: 40px;">At Electreus, we are proud to work with a diverse range of clients, including leading businesses, healthcare providers, and educational institutions. Our clients trust us to deliver cutting-edge solutions tailored to their unique needs. We value long-term partnerships built on innovation, reliability, and exceptional service. Whether it’s a large-scale enterprise, a growing startup, or a non-profit organization, Electreus is dedicated to helping our clients achieve their goals through advanced technology and personalized strategies. Join our growing list of satisfied clients and experience the Electreus difference</p>
+    <h6 class="text-center mb-4 client-cards-title fade-up-section">OUR PREMIUM CLIENTS</h6>
+    <p class="text-justify fade-up-section" style=" line-height: 1.8; margin: 40px;">At Electreus, we are proud to work with a diverse range of clients, including leading businesses, healthcare providers, and educational institutions. Our clients trust us to deliver cutting-edge solutions tailored to their unique needs. We value long-term partnerships built on innovation, reliability, and exceptional service. Whether it’s a large-scale enterprise, a growing startup, or a non-profit organization, Electreus is dedicated to helping our clients achieve their goals through advanced technology and personalized strategies. Join our growing list of satisfied clients and experience the Electreus difference</p>
     <div class="container">
       <div class="row client-cards">
         <div class="col-auto client-card">
@@ -182,6 +226,11 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRv5iMnTuS_BEQG7GrtQZf_iFausYuCkerjQ&s" class="client-card-img-top" alt="Client 12" />
           </div>
         </div>
+        <div class="col-auto client-card">
+          <div class="client-card-item">
+            <img src="static/images/devi-clinical-laboratory.png" class="client-card-img-top" alt="Client 12" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -217,7 +266,7 @@
             <img src="https://media.licdn.com/dms/image/C4E12AQH0-49iv13VWw/article-cover_image-shrink_600_2000/0/1520149771471?e=2147483647&v=beta&t=h3xK2YrpZSGxujfodilfFuwg86adCkcr8J39rhgazzo" class="card-img-top" alt="Card image" />
             <div class="overlay">
               <div class="text">
-                <b>GENERATOR INSULATIONS</b>
+                <b>GENERATOR INSTALLATIONS</b>
               </div>
             </div>
           </div>
@@ -253,8 +302,8 @@
   </section>
 
   <section>
-    <h6 class="text-center mb-4" style="font-size: 36px; font-weight: 600; color: #0044ff;">OUR BRANDS</h6>
-    <p class="justify-content-center text-justify" style="margin: 50px; line-height: 1.8;">"At Electreus, we take pride in our commitment to quality and reliability, which is why we partner with the leading brands in the electrical installation industry. Our collaborations include trusted names like Schneider Electric, Siemens, and Legrand, ensuring that each project we complete is powered by the best technology available. These partnerships allow us to offer cutting-edge solutions for electrical wiring, smart systems, and energy-efficient products that meet the highest standards of safety and performance. Whether it's residential, commercial, or industrial installations, Electreus brings expertise and innovation to every project, with the backing of these renowned brands. By using only the best components, we guarantee that our clients receive long-lasting, reliable, and sustainable electrical systems that serve them for years to come. Trust Electreus and our industry-leading partners to deliver excellence in every installation."</p>
+    <h6 class="text-center mb-4v fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff;">OUR BRANDS</h6>
+    <p class="justify-content-center text-justify fade-up-section" style="margin: 50px; line-height: 1.8;">"At Electreus, we take pride in our commitment to quality and reliability, which is why we partner with the leading brands in the electrical installation industry. Our collaborations include trusted names like Schneider Electric, Siemens, and Legrand, ensuring that each project we complete is powered by the best technology available. These partnerships allow us to offer cutting-edge solutions for electrical wiring, smart systems, and energy-efficient products that meet the highest standards of safety and performance. Whether it's residential, commercial, or industrial installations, Electreus brings expertise and innovation to every project, with the backing of these renowned brands. By using only the best components, we guarantee that our clients receive long-lasting, reliable, and sustainable electrical systems that serve them for years to come. Trust Electreus and our industry-leading partners to deliver excellence in every installation."</p>
     <div class="container my-5">
       <div class="brand-cards-wrapper">
         <div class="brand-cards-container">
@@ -272,7 +321,7 @@
         <!-- Left Container (Images) -->
         <div class="col-md-6 fade-up-item">
           <div class="about-image-container">
-            <img src="https://blog.vingapp.com/hubfs/Untitled%20design-Aug-11-2022-12-39-23-62-PM.png" alt="About Us Image 2" class="img-fluid about-image" />
+            <img src="static/images/dedicated_team.jpeg" alt="About Us Image 2" class="img-fluid about-image" />
           </div>
         </div>
         <!-- Right Container (Text) -->
@@ -284,7 +333,7 @@
   </section>
 
   <section>
-    <div class="container-fluid py-4 fade-up-section">
+    <div class="container-fluid py-4">
       <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff !important;">OUR WORKS WE PROVIDE</h6>
       <div class="col-12">
         <div class="weprovide-slider">
@@ -433,11 +482,11 @@
   <br />
   <br />
 
-  <section class="banner-container">
+  <section class="banner-container fade-up-section">
     <div class="container fade-up-section">
       <div class="position-relative fade-up-section">
         <!-- Image -->
-        <img src="https://www.mobelinteriors.in/images/1700736745-img1-banner.jpg" class="img-fluid w-100" alt="Electrician working with wires" style="filter: brightness(0.5);" />
+        <img src="static/images/households.jpeg" class="img-fluid w-100" alt="Electrician working with wires" style="filter: brightness(0.4);" />
 
         <!-- Overlay Text -->
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white fade-up-section">
@@ -451,15 +500,15 @@
   <br />
 
   <section>
-    <div class="container mt-5">
+    <div class="container mt-5 fade-up-section">
       <!-- Section Title -->
-      <h6 class="text-center mb-4" style="font-size: 36px; font-weight: 600; color: #0044ff;">CLIENTS TESTIMONIALS</h6>
-      <h4 class="text-center">Our Happy Clients</h4>
+      <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff;">CLIENTS TESTIMONIALS</h6>
+      <h4 class="text-center fade-up-section">Our Happy Clients</h4>
       <br />
 
       <!-- Carousel -->
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+      <div id="testimonialCarousel fade-up-section" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner fade-up-section">
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="row">

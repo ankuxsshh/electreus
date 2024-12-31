@@ -5,21 +5,22 @@
 {% endblock %}
 
 {% block content %}
-  <section class="project">
-    <div class="project-section text-white d-flex justify-content-center align-items-center">
-      <div class="container text-center">
-        <h1 class="display-4" style="font-size: 42px; font-weight: 500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); color: white;"><b>OUR PROJECTS</b></h1>
-      </div>
+
+<section>
+  <div class="about-section text-white d-flex justify-content-center align-items-center position-relative">
+    <img src="static/images/project_banner.jpeg" alt="About Us Banner" class="about-background">
+    <div class="container text-center position-absolute w-100">
+      <h1 class="display-4" style="font-size: 42px; font-weight: 600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); color: white;"><b>OUR PROJECTS</b></h1>
     </div>
-  </section>
+  </div>
+</section>
 
   <br />
   <br />
 
   <section class="project">
-    <div class="container welcome-container">
-      <h1 style="font-weight: 600;"><b>PROJECTS</b> THAT DEFINE US</h1>
-      <p style="color: #262626; line-height: 1.8;">Electreus Engineers and Contractors is a premier engineering and construction firm dedicated to delivering top-tier projects that meet both quality and budgetary requirements. With a team of skilled professionals, we specialize in offering innovative solutions for residential and commercial developments. Our commitment to excellence is demonstrated through our meticulous attention to detail, timely project delivery, and strict adherence to safety standards. At Electreus, we focus on building lasting relationships with clients, grounded in trust, integrity, and exceptional service. Whether it's design, engineering, or construction, we take pride in transforming ideas into reality, ensuring each project is completed with precision and care. Our mission is to be a reliable partner for all your construction needs, delivering results that exceed expectations.</p>
+    <div class="container">
+      <h1 style="font-weight: 600; color: #0044ff !important;"><b>PROJECTS</b> THAT DEFINE US</h1>
     </div>
   </section>
 
@@ -27,12 +28,12 @@
     <div class="section-projects-container container py-5">
       <div class="row g-4">
         <div class="col-6 col-md-3">
-          <div class="section-projects-card" onclick="showGalleryModal('noel')">
+          <div class="section-projects-card" onclick="showGalleryModal('amrita')">
             <div class="section-projects-image">
-              <img src="static/images/Noel/Noel6.jpeg" alt="Noel Flat, Kochi" class="img-fluid" />
+              <img src="static/images/Amrita/Amrita1.jpeg" alt="AMRITA Hospital, Mother & Child Block, Kochi" class="img-fluid" />
             </div>
             <div class="section-projects-title">
-              <p>Noel Flat, Kochi</p>
+              <p>AMRITA Hospital, Mother & Child Block, Kochi</p>
             </div>
           </div>
         </div>
@@ -47,12 +48,12 @@
           </div>
         </div>
         <div class="col-6 col-md-3">
-          <div class="section-projects-card" onclick="showGalleryModal('dlife')">
+          <div class="section-projects-card" onclick="showGalleryModal('snkids')">
             <div class="section-projects-image">
-              <img src="static/images/Dlife/Dlife3.jpeg" alt="D'LIFE Office, Kollam" class="img-fluid" />
+              <img src="static/images/SN kids/SN kids11.jpeg" alt="SN Kids International School, Kollam" class="img-fluid" />
             </div>
             <div class="section-projects-title">
-              <p>D'LIFE Office, Kollam</p>
+              <p>SN Kids International School, Kollam</p>
             </div>
           </div>
         </div>
@@ -97,12 +98,12 @@
           </div>
         </div>
         <div class="col-6 col-md-3">
-          <div class="section-projects-card" onclick="showGalleryModal('snkids')">
+          <div class="section-projects-card" onclick="showGalleryModal('dlife')">
             <div class="section-projects-image">
-              <img src="static/images/SN kids/SN kids11.jpeg" alt="SN Kids International School, Kollam" class="img-fluid" />
+              <img src="static/images/Dlife/Dlife3.jpeg" alt="D'LIFE Office, Kollam" class="img-fluid" />
             </div>
             <div class="section-projects-title">
-              <p>SN Kids International School, Kollam</p>
+              <p>D'LIFE Office, Kollam</p>
             </div>
           </div>
         </div>
@@ -147,12 +148,12 @@
           </div>
         </div>
         <div class="col-6 col-md-3">
-          <div class="section-projects-card" onclick="showGalleryModal('amrita')">
+          <div class="section-projects-card" onclick="showGalleryModal('noel')">
             <div class="section-projects-image">
-              <img src="static/images/Amrita/Amrita1.jpeg" alt="AMRITA Hospital, Mother & Child Block, Kochi" class="img-fluid" />
+              <img src="static/images/Noel/Noel6.jpeg" alt="Noel Flat, Kochi" class="img-fluid" />
             </div>
             <div class="section-projects-title">
-              <p>AMRITA Hospital, Mother & Child Block, Kochi</p>
+              <p>Noel Flat, Kochi</p>
             </div>
           </div>
         </div>
@@ -166,9 +167,27 @@
             </div>
           </div>
         </div>
+        <div class="col-6 col-md-3">
+          <div class="section-projects-card" onclick="showGalleryModal('')">
+            <div class="section-projects-image">
+              <img src="https://www.deviclinic.com/img/Devi_Clinic_Pallimukku.jpg" alt="Devi Clinical Laboratory, Kollam" class="img-fluid" />
+            </div>
+            <div class="section-projects-title">
+              <p>Devi Clinical Laboratory, Kollam</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <section class="project">
+    <div class="container">
+      <p style="color: #262626; line-height: 1.8;">Electreus Engineers and Contractors is a premier engineering and construction firm dedicated to delivering top-tier projects that meet both quality and budgetary requirements. With a team of skilled professionals, we specialize in offering innovative solutions for residential and commercial developments. Our commitment to excellence is demonstrated through our meticulous attention to detail, timely project delivery, and strict adherence to safety standards. At Electreus, we focus on building lasting relationships with clients, grounded in trust, integrity, and exceptional service. Whether it's design, engineering, or construction, we take pride in transforming ideas into reality, ensuring each project is completed with precision and care. Our mission is to be a reliable partner for all your construction needs, delivering results that exceed expectations.</p>
+    </div>
+  </section>
+  <br>
+  <br>
 
   <!-- Project Image Modal Overlay -->
   <div id="section-projects-overlay" class="section-projects-overlay">

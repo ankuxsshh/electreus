@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="static/css/style.css" />
+
   </head>
 
   <body>
@@ -33,26 +34,26 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light fade-up-section">
       <div class="container fade-up-section">
         <!-- Logo placed on the left -->
-        <a class="navbar-brand fade-up-section" href="home"><img src="static/images/logo.png" alt="Electreus Logo" class="navbar-logo" /></a>
+        <a class="navbar-brand fade-up-section" href="{% url 'index' %}"><img src="static/images/logo.png" alt="Electreus Logo" class="navbar-logo" /></a>
         <!-- Toggle button for mobile view -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <!-- Collapsible menu for links -->
         <div class="collapse navbar-collapse fade-up-section" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'index' %}">HOME</a>
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'projects' %}">OUR PROJECTS</a>
+              <a class="nav-link" href="{% url 'projects' %}">Our Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
+              <a class="nav-link" href="{% url 'services' %}">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -60,10 +61,13 @@
     </nav>
 
     <!-- WhatsApp and Call Buttons -->
-    <div class="fixed-buttons fade-up-section">
-      <a href="tel:+919895533884" class="btn-whatsapp-pulse call-button" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
-      <a href="https://wa.me/+919895533884" class="btn-whatsapp-pulse whatsapp-button" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
+      <a href="tel:+919895533884" class="btn-whatsapp-pulse"  style="background: #000; z-index: 2000;">
+        <span class="fa-solid fa-phone" style="font-size:0.6em;"></span>
+      </a>
+      
+      <a href="https://api.whatsapp.com/send?phone=+919895533884&text=Welcome to Atrium Design Studio" class="btn-whatsapp-pulse btn-whatsapp-pulse-border" style="z-index: 2000;">
+        <i class="fa-brands fa-whatsapp" style='color:#fffefe; font-size:0.7em;'></i>
+      </a>
 
     {% block content %}
 
