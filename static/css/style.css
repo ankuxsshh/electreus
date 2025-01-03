@@ -36,7 +36,7 @@ html {
 .navbar {
     height: 90px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.946);
+    background-color: rgba(0, 0, 0, 0.597);
     display: flex;
     align-items: center;
 }
@@ -178,7 +178,7 @@ html {
 }
 
 .carousel-caption p {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
 }
 
 /* Responsive adjustments */
@@ -188,17 +188,22 @@ html {
     }
 
     .carousel-caption {
-        top: 70%;
-        /* Move caption lower for better visibility */
-        transform: translate(-50%, -70%);
+        top: 25%;
+        left: 5%;
+        text-align: left;
+        transform: none;
     }
 
     .carousel-caption h5 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .carousel-caption p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p2 {
+        font-size: 2.5rem;
     }
 
     .carousel-caption a {
@@ -209,20 +214,24 @@ html {
 
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 60%;
-        /* Move caption further lower for small screens */
-        transform: translate(-50%, -75%);
+        top: 25%;
+        left: 5%;
+        text-align: left;
+        transform: none;
         padding: 1rem;
         width: 90%;
-        /* Restrict text width */
     }
 
     .carousel-caption h5 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .carousel-caption p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .carousel-caption p2 {
+        font-size: 2.5rem;
     }
 
     .carousel-caption a {
@@ -657,11 +666,23 @@ footer .social-icon:hover {
     position: relative;
     overflow: hidden;
     border-radius: 0px;
+    width: 420px;
+    /* Set fixed width */
+    height: 280px;
+    /* Set fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .whatwedocards img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    width: 420px;
+    /* Set fixed width */
+    height: 280px;
+    /* Ensure image fits within the container without distortion */
     border-radius: 0px;
 }
 
