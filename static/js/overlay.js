@@ -14,7 +14,9 @@ function showGalleryModal(project) {
         'doctor': ['static/images/Doctor/Doctor1.jpeg', 'static/images/Doctor/Doctor2.jpeg'],
         'amrita': ['static/images/Amrita/Amrita1.jpeg', 'static/images/Amrita/Amrita2.jpeg', 'static/images/Amrita/Amrita3.jpeg', 'static/images/Amrita/Amrita4.jpeg'],
         'snayurveda': ['static/images/SN ayurveda/SN ayurveda1.jpeg', 'static/images/SN ayurveda/SN ayurveda2.jpeg', 'static/images/SN ayurveda/SN ayurveda3.jpeg', 'static/images/SN ayurveda/SN ayurveda4.jpeg', 'static/images/SN ayurveda/SN ayurveda5.jpeg', 'static/images/SN ayurveda/SN ayurveda6.jpeg', 'static/images/SN ayurveda/SN ayurveda7.jpeg', 'static/images/SN ayurveda/SN ayurveda8.jpeg', 'static/images/SN ayurveda/SN ayurveda9.jpeg', 'static/images/SN ayurveda/SN ayurveda10.jpeg', 'static/images/SN ayurveda/SN ayurveda11.jpeg', 'static/images/SN ayurveda/SN ayurveda12.jpeg', 'static/images/SN ayurveda/SN ayurveda13.jpeg'],
-        'devi': ['static/images/Devi/devi1.png', 'static/images/Devi/devi2.png','static/images/Devi/devi4.png','static/images/Devi/devi5.png',]
+        'devi': ['static/images/Devi/devi1.png', 'static/images/Devi/devi2.png','static/images/Devi/devi4.png','static/images/Devi/devi5.png',],
+        'kalyan': ['static/images/Kalyan/kalyan1.jpeg', 'static/images/Kalyan/kalyan2.jpeg','static/images/Kalyan/kalyan3.jpeg','static/images/Kalyan/kalyan4.jpeg',],
+        'vishal': ['static/images/Vishal/vishal1.jpeg', 'static/images/Vishal/vishal2.jpeg','static/images/Vishal/vishal3.jpeg','static/images/Vishal/vishal4.jpeg','static/images/Vishal/vishal5.jpeg','static/images/Vishal/vishal6.jpeg','static/images/Vishal/vishal7.jpeg']
     };
 
     const imageContainer = document.getElementById('section-projects-image-container');
