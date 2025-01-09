@@ -2,8 +2,8 @@
   <!-- Image Carousel (Slider) -->
   <div id="carouselExampleAutoplay" class="carousel slide carousel-fade fade-up-section" data-bs-ride="carousel">
     <div class="carousel-inner">
-            <!-- First Slide -->
-      <div class="carousel-item active position-relative fade-up-section">
+      <!-- First Slide -->
+      {% comment %} <div class="carousel-item active position-relative fade-up-section">
         <img src="static/images/bg1.jpeg" class="d-block w-100 zoom-effect" alt="Slide 1" />
         <!-- Text Overlay -->
         <div class="carousel-caption d-md-block">
@@ -20,8 +20,9 @@
         <!-- Text Overlay -->
         <div class="carousel-caption d-md-block">
           <br>
-          <h5 class="text-light fade-up-section">ONE STOP SOLUTION FOR ALL YOUR ELECTRICAL REQUIREMENTS<h5>
-          <p class="text-light fade-up-section">HT Transformer / DG / Panel Erection and LT Works</p>
+          <h5 class="text-light fade-up-section">ONE STOP SOLUTION
+            <br>FOR ALL YOUR ELECTRICAL <br>REQUIREMENTS<h5>
+          <p class="text-light fade-up-section">High Tension Transformer Works, DG, LV Panel Erection & LT Works</p>
           <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
         </div>
       </div>
@@ -35,9 +36,9 @@
           <p class="text-light fade-up-section">We Offer Professional Cost Effective Solutions for HT & LT Works</p>
           <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
         </div>
-      </div>
+      </div> {% endcomment %}
       <!-- Fourth Slide -->
-      <div class="carousel-item position-relative fade-up-section">
+      <div class="carousel-item active position-relative fade-up-section">
         <img src="static/images/bg-4.jpeg" class="d-block w-100 zoom-effect" alt="Slide 4" />
         <div class="carousel-caption d-md-block">
           <p2 class="text-light fade-up-section" style="font-weight: 1000;">
