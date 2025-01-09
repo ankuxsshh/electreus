@@ -5,59 +5,93 @@
 {% endblock %}
 
 {% block content %}
-
-<section>
-  <div class="contact-section text-white d-flex justify-content-center align-items-center position-relative">
-    <img src="static/images/contactus_banner.jpg" alt="About Us Banner" class="about-background">
-    <div class="container text-center position-absolute w-100">
-      <h1 class="display-4" style="font-size: 42px; font-weight: 600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); color: white;"><b>CONTACT US</b></h1>
+  <section>
+    <div class="contact-section text-white d-flex justify-content-center align-items-center position-relative">
+      <img src="static/images/contactus_banner.jpg" alt="About Us Banner" class="contact-background" />
+      <div class="container text-center position-absolute w-100">
+        <h1 class="display-4" style="font-size: 42px; font-weight: 100; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); color: white;margin-top: 150px;"><b>CONTACT US</b></h1>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<br />
-<br />
+  <br />
+  <br />
 
-<section>
-  <!-- Contact Form Section -->
-  <div class="container my-5">
-    <div class="row justify-content-center">
-      <!-- Left Container: Google Map -->
-      <div class="col-md-6">
-        <div class="map-container" style="height: 470px;">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509451!2d144.96305771571687!3d-37.81627974274859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e89488e1a218!2sMelbourne%20Central%20Tower!5e0!3m2!1sen!2sau!4v1639485045123!5m2!1sen!2sau" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-          </iframe>
+  <section class="contact-page-section">
+    <!-- Contact and Address Section -->
+    <div class="container mt-5">
+      <div class="row justify-content-around text-center">
+        <!-- Address Section -->
+        <div class="col-md-5" style="background-color:rgb(227, 233, 247); padding: 20px;">
+          <div class="d-flex align-items-center justify-content-center mb-3">
+            <div class="contact-icon-circle d-flex justify-content-center align-items-center me-3">
+              <i class="fa-solid fa-house fa-2x"></i>
+            </div>
+            <h2 class="contact-heading mb-0"></h2>
+          </div>
+          <p>
+            KOLLAM - No.7 Kesavan Nagar, Mundakkal West, Kollam
+          </p>
+          <p>
+            ERNAKULAM - IIV/523C, Oorampalli Buildings, Kochi
+          </p>
+          <p>
+            TRIVANDRUM - SP-3/183, Seasons, Sreekariyam P.O.Trivandrum
+          </p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="col-md-5" style="background-color:rgb(227, 233, 247); padding: 20px;">
+          <div class="d-flex align-items-center justify-content-center mb-3">
+            <div class="contact-icon-circle d-flex justify-content-center align-items-center me-3">
+              <i class="fa-regular fa-address-book fa-2x"></i>
+            </div>
+            <h2 class="contact-heading mb-0"></h2>
+          </div>
+          <p>
+            <i class="fa fa-envelope"></i> electreus2k20@gmail.com
+          </p>
+          <p>
+            <i class="fa fa-envelope"></i>vishnuay1@gmail.com
+          </p>
+          <p>
+            <i class="fa fa-phone"></i> +91 9895533884
+          </p>
         </div>
       </div>
-      
-      <!-- Right Container: Contact Form -->
-      <div class="col-md-6 p-4 bg-light">
-        <form action="#" method="post">
-          <h2 class="text-center" style="color:#0044ff";>CONTACT US FORM</h2>
-          <div class="mb-3">
-            <label for="name" class="form-label"></label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <!-- Left Container: Google Map -->
+        <div class="col-md-6 contact-map-form">
+          <div class="contact-map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509451!2d144.96305771571687!3d-37.81627974274859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e89488e1a218!2sMelbourne%20Central%20Tower!5e0!3m2!1sen!2sau!4v1639485045123!5m2!1sen!2sau" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label"></label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label"></label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block" style="font-weight: 300;">Send Message</button>
-        </form>
+        </div>
+
+        <!-- Right Container: Contact Form -->
+        <div class="col-md-6 contact-map-form bg-light p-4">
+          <form action="#" method="post">
+            <h2 class="text-center" style="color:#0044ff;">CONTACT US FORM</h2>
+            <br />
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+            </div>
+            <br />
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+            </div>
+            <br />
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here" required></textarea>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
 {% endblock %}

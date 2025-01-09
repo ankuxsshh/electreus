@@ -1757,53 +1757,29 @@ body {
 }
 
 .contact-background {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: brightness(0.6);
 }
 
-.contact-icon-circle {
-    width: 60px;
-    height: 60px;
-    background-color: #f0f0f0;
-    border-radius: 50%;
-}
 
-.contact-icon-circle i {
-    color: #0044ff;
-}
-
-.contact-heading {
-    color: #0044ff;
-}
-
-.contact-page-section .form-control {
+.form-control {
     border-radius: 10px;
     height: 50px;
-    width: 100%;
 }
 
-.contact-map-container{
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-map-form {
-    height: 450px;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-}
-
-.contact-map-container {
+.map-container {
     border-radius: 5px;
-    overflow: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contact-map-form .btn-primary {
+.btn-primary {
     background-color: #0044ff;
     border-color: #0044ff;
     color: white;
@@ -1814,7 +1790,7 @@ body {
     border-radius: 10px;
 }
 
-.contact-map-form .btn-primary:hover {
+.btn-primary:hover {
     background-color: #0033cc;
     border-color: #0033cc;
 }

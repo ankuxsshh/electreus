@@ -30,43 +30,46 @@
       </div>
     </div>
 
-    <!-- Transparent Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light fade-up-section">
-      <div class="container fade-up-section">
-        <!-- Logo placed on the left -->
-        <a class="navbar-brand fade-up-section" href="{% url 'index' %}"><img src="static/images/logo.png" alt="Electreus Logo" class="navbar-logo" /></a>
-        <!-- Toggle button for mobile view -->
-        <button class="navbar-toggler border-none" style="border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> MENU</button>
-        <!-- Collapsible menu for links -->
-        <div class="collapse navbar-collapse fade-up-section" id="navbarNav">
+<!-- Transparent Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
+  <div class="container">
+      <!-- Logo placed on the left -->
+      <a class="navbar-brand" href="{% url 'index' %}"><img src="static/images/logo.png" alt="Electreus Logo" class="navbar-logo" /></a>
+      <!-- Toggle button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> MENU
+      </button>
+      <!-- Collapsible menu for links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'index' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'projects' %}">Our Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'services' %}">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
-            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'services' %}">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </li>
           </ul>
-        </div>
       </div>
-    </nav>
+  </div>
+</nav>
+
 
     <!-- WhatsApp and Call Buttons -->
-      <a href="tel:+919895533884" class="btn-whatsapp-pulse"  style="background: #000; z-index: 2000;">
-        <span class="fa-solid fa-phone" style="font-size:0.6em;"></span>
+      <a href="tel:+919895533884" class="btn-whatsapp-pulse"  style="background: #000; z-index: 2000;text-decoration: none; text-decoration-line: none;">
+        <span class="fa-solid fa-phone" style="font-size:0.6em;text-decoration: none;text-decoration-line: none;"></span>
       </a>
       
-      <a href="https://api.whatsapp.com/send?phone=+919895533884&text=Welcome to Atrium Design Studio" class="btn-whatsapp-pulse btn-whatsapp-pulse-border" style="z-index: 2000;">
-        <i class="fa-brands fa-whatsapp" style='color:#fffefe; font-size:0.7em;'></i>
+      <a href="https://api.whatsapp.com/send?phone=+919895533884&text=Welcome to Electreus" class="btn-whatsapp-pulse btn-whatsapp-pulse-border" style="z-index: 2000;text-decoration: none; text-decoration-line: none;">
+        <i class="fa-brands fa-whatsapp" style='color:#fffefe; font-size:0.7em;text-decoration: none; text-decoration-line: none;'></i>
       </a>
 
     {% block content %}
@@ -148,6 +151,7 @@
     <script src="static/js/experience.js"></script>
     <script src="static/js/fade.js"></script>
     <script src="static/js/loader.js"></script>
+    <script src="static/js/navbar.js"></script>
 
   </body>
 </html>

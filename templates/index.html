@@ -2,10 +2,42 @@
   <!-- Image Carousel (Slider) -->
   <div id="carouselExampleAutoplay" class="carousel slide carousel-fade fade-up-section" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <!-- Second Slide -->
+            <!-- First Slide -->
       <div class="carousel-item active position-relative fade-up-section">
         <img src="static/images/bg1.jpeg" class="d-block w-100 zoom-effect" alt="Slide 1" />
         <!-- Text Overlay -->
+        <div class="carousel-caption d-md-block">
+          <br>
+          <h5 class="text-light fade-up-section">THE MOST RELIABLE</h5>
+          <p class="text-light fade-up-section">Since Electrical Contracting Company Since 2019</p>
+          <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
+        </div>
+      </div>
+      <!-- Second Slide -->
+      <div class="carousel-item position-relative fade-up-section">
+        <img src="static/images/bg-2.jpeg" class="d-block w-100 zoom-effect" alt="Slide 2" />
+        <!-- Text Overlay -->
+        <div class="carousel-caption d-md-block">
+          <br>
+          <h5 class="text-light fade-up-section">ONE STOP SOLUTION FOR ALL YOUR ELECTRICAL REQUIREMENTS<h5>
+          <p class="text-light fade-up-section">HT Transformer / DG / Panel Erection and LT Works</p>
+          <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
+        </div>
+      </div>
+      <!-- Third Slide -->
+      <div class="carousel-item position-relative fade-up-section">
+        <img src="static/images/bg2.jpeg" class="d-block w-100 zoom-effect" alt="Slide 3" />
+        <!-- Text Overlay -->
+        <div class="carousel-caption d-md-block">
+          <br>
+          <h5 class="text-light fade-up-section">PREMIUM QUALITY ELECTRICAL PRODUCTS AND SERVICES<h5>
+          <p class="text-light fade-up-section">We Offer Professional Cost Effective Solutions for HT & LT Works</p>
+          <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
+        </div>
+      </div>
+      <!-- Fourth Slide -->
+      <div class="carousel-item position-relative fade-up-section">
+        <img src="static/images/bg-4.jpeg" class="d-block w-100 zoom-effect" alt="Slide 4" />
         <div class="carousel-caption d-md-block">
           <p2 class="text-light fade-up-section" style="font-weight: 1000;">
             <strong>SAFETY</strong>
@@ -16,28 +48,6 @@
           <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
         </div>
       </div>
-      <!-- First Slide -->
-      <div class="carousel-item position-relative fade-up-section">
-        <img src="static/images/bg2.jpeg" class="d-block w-100 zoom-effect" alt="Slide 2" />
-        <!-- Text Overlay -->
-        <div class="carousel-caption d-md-block">
-          <br>
-          <h5 class="text-light fade-up-section">PREMIUM QUALITY ELECTRICAL PRODUCTS AND SERVICES</h5>
-          <p class="text-light fade-up-section">We Offer Professional Cost Effective Solutions for HT & LT Works</p>
-          <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
-        </div>
-      </div>
-      <!-- Third Slide -->
-      <div class="carousel-item position-relative fade-up-section">
-        <img src="static/images/bg4.jpeg" class="d-block w-100 zoom-effect" alt="Slide 3" />
-        <!-- Text Overlay -->
-        <div class="carousel-caption d-md-block">
-          <br>
-          <h5 class="text-light fade-up-section">ONE STOP SOLUTION FOR ALL YOUR ELECTRICAL REQUIREMENTS<h5>
-          <p class="text-light fade-up-section">HT Transformer / DG / Panel Erection and LT Works</p>
-          <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -45,7 +55,7 @@
   <section class="experience-section py-5 fade-in" id="experienceSection">
     <div class="container">
       <h2 class="experience-title text-center" style="font-weight: 600;">EXPERT ELECTRICAL CONTRACTORS FOR RESIDENTIAL AND COMMMERCIAL PROJECTS</h2>
-      <p class="experience-description justify-content-center text-justify" style="line-height: 1.8; font-size: 16px; color: #262626;">We specialize in professional electrical wiring services designed to meet the highest standards of safety, efficiency, and reliability. Whether for residential or commercial properties, our expert electricians are dedicated to delivering tailored solutions that suit your specific needs. From new installations and upgrades to maintenance and troubleshooting, we ensure that every project is completed with precision and care. Using top-quality materials and advanced techniques, we prioritize your safety and satisfaction while minimizing downtime and energy consumption. Trust us to power your property with excellence and dependability, creating a secure and efficient electrical system for years to come.</p>
+      <p class="experience-description justify-content-center text-justify" style="line-height: 1.8; font-size: 16px; color: #262626;">We specialize in professional electrical services designed to meet the highest standards of safety, efficiency, and reliability. Whether for residential or commercial properties, our expert electricians are dedicated to delivering tailored solutions that suit your specific needs. From new installations and upgrades to maintenance and troubleshooting, we ensure that every project is completed with precision and care. Using top-quality materials and advanced techniques, we prioritize your safety and satisfaction while minimizing downtime and energy consumption. Trust us to power your property with excellence and dependability, creating a secure and efficient electrical system for years to come.</p>
       <br />
       <!-- Experience Cards Row -->
       <div class="experience-cards">
@@ -89,24 +99,27 @@
     </div>
   </section>
 
-  <!-- ABOUT US SECTION -->
-  <section class="about-us-section py-5 fade-up-section" id="about-us-section">
-    <div class="container fade-up-section">
-      <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff !important;">COMPANY PROFILE</h6>
-      <div class="row align-items-center fade-up-section">
-        <!-- Left Container (Text) -->
-        <div class="col-md-6 fade-up-item">
-          <p class="about-text justify-content-center text-justify" style=" line-height: 1.8; margin: 20px;">Electreus, a government-licensed electrical contractor founded in 2019, has grown into a trusted provider of electrical, networking, and plumbing solutions across Kerala. Catering to commercial, industrial, and residential projects, the company offers end-to-end services, including design, consultation, installation, and commissioning. Electreus boasts a diverse portfolio encompassing industrial units, hospitals, commercial complexes, apartments, banks, schools, convention centers, and corporate offices. Renowned for professionalism and affordability, the company ensures that no project is too big or small for its skilled team. Electreus is committed to client satisfaction through tailored and reliable services designed to meet the unique requirements of each project. Its emphasis on quality and trust has earned it a reputation as a preferred choice for electrical services in central Kerala. As it continues to grow, Electreus remains focused on expanding its client base and delivering exceptional results while upholding the high standards of excellence that define its work.</p>
-        </div>
-        <!-- Right Container (Images) -->
-        <div class="col-md-6 fade-up-item">
-          <div class="about-image-container">
-            <img src="static/images/companyprofile.jpeg" alt="About Us Image 2" class="img-fluid about-image" />
-          </div>
+<!-- ABOUT US SECTION -->
+<section class="about-us-section py-5 fade-up-section" id="about-us-section">
+  <div class="container fade-up-section">
+    <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff !important;">COMPANY PROFILE</h6>
+    <div class="row align-items-center fade-up-section">
+      <!-- Left Container (Text) -->
+      <div class="col-md-6 fade-up-item">
+        <p class="about-text text-justify">
+          Electreus, a government-licensed electrical contractor founded in 2019, has grown into a trusted provider of electrical, networking, and plumbing solutions across Kerala. Catering to commercial, industrial, and residential projects, the company offers end-to-end services, including design, consultation, installation, and commissioning. Electreus boasts a diverse portfolio encompassing industrial units, hospitals, commercial complexes, apartments, banks, schools, convention centers, and corporate offices. Renowned for professionalism and affordability, the company ensures that no project is too big or small for its skilled team. Electreus is committed to client satisfaction through tailored and reliable services designed to meet the unique requirements of each project. Its emphasis on quality and trust has earned it a reputation as a preferred choice for electrical services in central Kerala. As it continues to grow, Electreus remains focused on expanding its client base and delivering exceptional results while upholding the high standards of excellence that define its work.
+        </p>
+      </div>
+      <!-- Right Container (Images) -->
+      <div class="col-md-6 fade-up-item">
+        <div class="about-image-container">
+          <img src="static/images/companyprofile.jpeg" alt="About Us Image" class="img-fluid about-image" />
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <br />
   <br />
@@ -229,6 +242,11 @@
         <div class="col-auto client-card">
           <div class="client-card-item">
             <img src="static/images/devi-clinical-laboratory.png" class="client-card-img-top" alt="Client 12" />
+          </div>
+        </div>
+        <div class="col-auto client-card">
+          <div class="client-card-item">
+            <img src="https://www.walk2mall.com/wp-content/uploads/2017/09/1506166631_vishal-logo.jpg" class="client-card-img-top" alt="Client 13" />
           </div>
         </div>
       </div>
