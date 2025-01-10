@@ -213,8 +213,6 @@ html {
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    font-size: 3.2rem;
-    font-weight: 300;
 }
 
 .carousel-caption p2 {
@@ -225,12 +223,18 @@ html {
     font-size: 2.5rem;
 }
 
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.btn-gradient {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .carousel-item img {
-        height: 100vh;
-    }
-
     .carousel-caption {
         top: 25%;
         left: 5%;
@@ -238,51 +242,79 @@ html {
         transform: none;
     }
 
+    .carousel-caption h7,
+    .carousel-caption h6,
+    .carousel-caption p,
+    .carousel-caption p1,
+    .carousel-caption p2,
     .carousel-caption h5 {
+        text-align: left;
+    }
+
+    .reliable-heading {
         font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
     }
 
-    .carousel-caption p {
-        font-size: 1.8rem;
-    }
-
-    .carousel-caption p2 {
-        font-size: 2.5rem;
-    }
-
-    .carousel-caption a {
+    .company-description {
         font-size: 1rem;
-        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .company-year {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-gradient {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
     }
 }
 
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 20%;
-        left: 5%;
-        text-align: left;
-        transform: none;
-        padding: 1rem;
+        top: 38%;
+        left: 6%;
         width: 90%;
     }
 
+    .reliable-heading {
+        font-size: 2.1rem;
+    }
+
+    .company-description {
+        font-size: 0.9rem;
+    }
+
+    .company-year {
+        font-size: 1rem;
+    }
+
+    .btn-gradient {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .carousel-caption h6 {
+        font-size: 1.9rem;
+    }
+
+    .carousel-caption p1 {
+        font-size: 0.9rem;
+    }
+
     .carousel-caption h5 {
-        font-size: 1.4rem;
-        font-weight: 500;
+        font-size: 1rem;
     }
 
     .carousel-caption p {
-        font-size: 2.2rem;
-        font-weight: 400;
+        font-size: 1.5rem;
     }
 
     .carousel-caption p2 {
-        font-size: 3.5rem;
-    }
-
-    .carousel-caption a {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.6rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -1784,7 +1816,7 @@ body {
     width: 100%;
 }
 
-.contact-map-container{
+.contact-map-container {
     height: 450px;
     display: flex;
     justify-content: center;
@@ -2067,4 +2099,3 @@ a.btn-gradient:hover {
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(146 146 146)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-

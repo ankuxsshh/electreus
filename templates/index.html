@@ -3,14 +3,13 @@
   <div id="carouselExampleAutoplay" class="carousel slide carousel-fade fade-up-section" data-bs-ride="carousel">
     <div class="carousel-inner">
       <!-- First Slide -->
-      {% comment %} <div class="carousel-item active position-relative fade-up-section">
+      <div class="carousel-item active position-relative fade-up-section">
         <img src="static/images/bg1.jpeg" class="d-block w-100 zoom-effect" alt="Slide 1" />
         <!-- Text Overlay -->
-        <div class="carousel-caption d-md-block">
-          <br>
-          <h5 class="text-light fade-up-section">THE MOST RELIABLE</h5>
-          <p class="text-light fade-up-section">Electrical Contracting Company 
-            <br>Since 2019</p>
+        <div class="carousel-caption d-md-block fade-up-section">
+          <h7 class="text-light reliable-heading">THE MOST RELIABLE</h7>
+          <p class="text-light company-description">Electrical Contracting Company</p>
+          <p class="text-light company-year">Since 2019</p>
           <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
         </div>
       </div>
@@ -18,11 +17,10 @@
       <div class="carousel-item position-relative fade-up-section">
         <img src="static/images/bg-2.jpeg" class="d-block w-100 zoom-effect" alt="Slide 2" />
         <!-- Text Overlay -->
-        <div class="carousel-caption d-md-block">
+        <div class="carousel-caption d-md-block fade-up-section">
+          <h6 class="text-light fade-up-section">ONE STOP SOLUTION<br />FOR ALL YOUR ELECTRICAL<br />REQUIREMENTS</h6>
+          <p1 class="text-light fade-up-section">High Tension Transformer Works, DG, LV Panel Erection & LT Works</p1>
           <br>
-          <h5 class="text-light fade-up-section">ONE STOP SOLUTION
-            <br>FOR ALL YOUR ELECTRICAL <br>REQUIREMENTS<h5>
-          <p class="text-light fade-up-section">High Tension Transformer Works, DG, LV Panel Erection & LT Works</p>
           <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
         </div>
       </div>
@@ -30,22 +28,23 @@
       <div class="carousel-item position-relative fade-up-section">
         <img src="static/images/bg2.jpeg" class="d-block w-100 zoom-effect" alt="Slide 3" />
         <!-- Text Overlay -->
-        <div class="carousel-caption d-md-block">
+        <div class="carousel-caption d-md-block fade-up-section">
+          <h6 class="text-light fade-up-section">PREMIUM QUALITY ELECTRICAL PRODUCTS AND SERVICES</h6>
+          <p1 class="text-light fade-up-section">We Offer Professional Cost Effective Solutions for HT & LT Works</p1>
           <br>
-          <h5 class="text-light fade-up-section">PREMIUM QUALITY ELECTRICAL PRODUCTS AND SERVICES<h5>
-          <p class="text-light fade-up-section">We Offer Professional Cost Effective Solutions for HT & LT Works</p>
           <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
         </div>
-      </div> {% endcomment %}
+      </div>
       <!-- Fourth Slide -->
-      <div class="carousel-item active position-relative fade-up-section">
+      <div class="carousel-item position-relative fade-up-section">
         <img src="static/images/bg-4.jpeg" class="d-block w-100 zoom-effect" alt="Slide 4" />
-        <div class="carousel-caption d-md-block">
+        <div class="carousel-caption d-md-block fade-up-section">
           <p2 class="text-light fade-up-section" style="font-weight: 1000;">
             <strong>SAFETY</strong>
           </p2>
-          <p class="text-light fade-up-section">Isn't a choice 
-            <br>It's a Responsibility</p>
+          <p class="text-light fade-up-section">
+            Isn't a choice<br />It's a Responsibility
+          </p>
           <h5 class="text-light fade-up-section">WE PROVIDE OUR CLIENTS WITH AN EXCELLENT VALUE FOR THEIR INVESTMENT</h5>
           <a href="{% url 'projects' %}" class="btn btn-gradient mt-2">Discover more...</a>
         </div>
@@ -101,27 +100,24 @@
     </div>
   </section>
 
-<!-- ABOUT US SECTION -->
-<section class="about-us-section py-5 fade-up-section" id="about-us-section">
-  <div class="container fade-up-section">
-    <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff !important;">COMPANY PROFILE</h6>
-    <div class="row align-items-center fade-up-section">
-      <!-- Left Container (Text) -->
-      <div class="col-md-6 fade-up-item">
-        <p class="about-text text-justify">
-          Electreus, a government-licensed electrical contractor founded in 2019, has grown into a trusted provider of electrical, networking, and plumbing solutions across Kerala. Catering to commercial, industrial, and residential projects, the company offers end-to-end services, including design, consultation, installation, and commissioning. Electreus boasts a diverse portfolio encompassing industrial units, hospitals, commercial complexes, apartments, banks, schools, convention centers, and corporate offices. Renowned for professionalism and affordability, the company ensures that no project is too big or small for its skilled team. Electreus is committed to client satisfaction through tailored and reliable services designed to meet the unique requirements of each project. Its emphasis on quality and trust has earned it a reputation as a preferred choice for electrical services in central Kerala. As it continues to grow, Electreus remains focused on expanding its client base and delivering exceptional results while upholding the high standards of excellence that define its work.
-        </p>
-      </div>
-      <!-- Right Container (Images) -->
-      <div class="col-md-6 fade-up-item">
-        <div class="about-image-container">
-          <img src="static/images/companyprofile.jpeg" alt="About Us Image" class="img-fluid about-image" />
+  <!-- ABOUT US SECTION -->
+  <section class="about-us-section py-5 fade-up-section" id="about-us-section">
+    <div class="container fade-up-section">
+      <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff !important;">COMPANY PROFILE</h6>
+      <div class="row align-items-center fade-up-section">
+        <!-- Left Container (Text) -->
+        <div class="col-md-6 fade-up-item">
+          <p class="about-text text-justify">Electreus, a government-licensed electrical contractor founded in 2019, has grown into a trusted provider of electrical, networking, and plumbing solutions across Kerala. Catering to commercial, industrial, and residential projects, the company offers end-to-end services, including design, consultation, installation, and commissioning. Electreus boasts a diverse portfolio encompassing industrial units, hospitals, commercial complexes, apartments, banks, schools, convention centers, and corporate offices. Renowned for professionalism and affordability, the company ensures that no project is too big or small for its skilled team. Electreus is committed to client satisfaction through tailored and reliable services designed to meet the unique requirements of each project. Its emphasis on quality and trust has earned it a reputation as a preferred choice for electrical services in central Kerala. As it continues to grow, Electreus remains focused on expanding its client base and delivering exceptional results while upholding the high standards of excellence that define its work.</p>
+        </div>
+        <!-- Right Container (Images) -->
+        <div class="col-md-6 fade-up-item">
+          <div class="about-image-container">
+            <img src="static/images/companyprofile.jpeg" alt="About Us Image" class="img-fluid about-image" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <br />
   <br />
@@ -259,73 +255,71 @@
   <br />
   <br />
 
-<!-- WHAT WE DO SECTION -->
-<section>
-  <!-- Title Section -->
-  <div class="whatwedo fade-up-section mb-4">
-    <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff !important;">WHAT WE DO</h6>
-  </div>
-  <!-- Card Section -->
-  <div class="container fade-up-section">
-    <div class="row justify-content-center">
-      <!-- First Card -->
-      <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
-        <div class="card shadow-sm whatwedocards">
-          <img src="static/images/whatwedo1.jpeg" class="card-img-top" alt="Card image" />
-          <div class="text-overlay">
-            <div class="text">
-              <b>ERECTION OF TRANSFORMERS</b>
+  <!-- WHAT WE DO SECTION -->
+  <section>
+    <!-- Title Section -->
+    <div class="whatwedo fade-up-section mb-4">
+      <h6 class="text-center mb-4 fade-up-section" style="font-size: 36px; font-weight: 600; color: #0044ff !important;">WHAT WE DO</h6>
+    </div>
+    <!-- Card Section -->
+    <div class="container fade-up-section">
+      <div class="row justify-content-center">
+        <!-- First Card -->
+        <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
+          <div class="card shadow-sm whatwedocards">
+            <img src="static/images/whatwedo1.jpeg" class="card-img-top" alt="Card image" />
+            <div class="text-overlay">
+              <div class="text">
+                <b>ERECTION OF TRANSFORMERS</b>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
+          <div class="card shadow-sm whatwedocards">
+            <img src="static/images/whatwedo2.jpeg" class="card-img-top" alt="Card image" />
+            <div class="text-overlay">
+              <div class="text">
+                <b>DG SET INSTALLATIONS</b>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Second Card -->
-      <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
-        <div class="card shadow-sm whatwedocards">
-          <img src="static/images/whatwedo2.jpeg" class="card-img-top" alt="Card image" />
-          <div class="text-overlay">
-            <div class="text">
-              <b>DG SET INSTALLATIONS</b>
+      <div class="row justify-content-center">
+        <!-- Third Card -->
+        <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
+          <div class="card shadow-sm whatwedocards">
+            <img src="static/images/whatwedo3.jpeg" class="card-img-top" alt="Card image" />
+            <div class="text-overlay">
+              <div class="text">
+                <b>PANEL BOARD ERECTION</b>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Card -->
+        <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
+          <div class="card shadow-sm whatwedocards">
+            <img src="static/images/whatwedo4.jpeg" class="card-img-top" alt="Card image" />
+            <div class="text-overlay">
+              <div class="text">
+                <b>RESIDENTIAL ELECTRIFICATION AND CONSULTATION</b>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row justify-content-center">
-      <!-- Third Card -->
-      <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
-        <div class="card shadow-sm whatwedocards">
-          <img src="static/images/whatwedo3.jpeg" class="card-img-top" alt="Card image" />
-          <div class="text-overlay">
-            <div class="text">
-              <b>PANEL BOARD ERECTION</b>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fourth Card -->
-      <div class="col-lg-5 col-md-4 col-12 mb-4 fade-up-section">
-        <div class="card shadow-sm whatwedocards">
-          <img src="static/images/whatwedo4.jpeg" class="card-img-top" alt="Card image" />
-          <div class="text-overlay">
-            <div class="text">
-              <b>RESIDENTIAL ELECTRIFICATION AND CONSULTATION</b>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section>
     <h6 class="text-center mb-4" style="font-size: 36px; font-weight: 600; color: #0044ff;">OUR BRANDS</h6>
-    <p class="justify-content-center text-justify" style="margin: 20px; line-height: 1.8;">
-      "At Electreus, we take pride in our commitment to quality and reliability, which is why we partner with the leading brands in the electrical installation industry. Our collaborations include trusted names like Schneider Electric, Siemens, and Legrand, ensuring that each project we complete is powered by the best technology available. These partnerships allow us to offer cutting-edge solutions for electrical wiring, smart systems, and energy-efficient products that meet the highest standards of safety and performance. Whether it's residential, commercial, or industrial installations, Electreus brings expertise and innovation to every project, with the backing of these renowned brands. By using only the best components, we guarantee that our clients receive long-lasting, reliable, and sustainable electrical systems that serve them for years to come. Trust Electreus and our industry-leading partners to deliver excellence in every installation."
-    </p>
+    <p class="justify-content-center text-justify" style="margin: 20px; line-height: 1.8;">"At Electreus, we take pride in our commitment to quality and reliability, which is why we partner with the leading brands in the electrical installation industry. Our collaborations include trusted names like Schneider Electric, Siemens, and Legrand, ensuring that each project we complete is powered by the best technology available. These partnerships allow us to offer cutting-edge solutions for electrical wiring, smart systems, and energy-efficient products that meet the highest standards of safety and performance. Whether it's residential, commercial, or industrial installations, Electreus brings expertise and innovation to every project, with the backing of these renowned brands. By using only the best components, we guarantee that our clients receive long-lasting, reliable, and sustainable electrical systems that serve them for years to come. Trust Electreus and our industry-leading partners to deliver excellence in every installation."</p>
     <div class="container my-5">
       <div class="brand-cards-wrapper">
         <div class="brand-cards-container">
@@ -335,7 +329,6 @@
     </div>
   </section>
 
-  
   <!-- GET TO KNOW US SECTION -->
   <section class="about-us-section py-5 fade-up-section" id="about-us-section">
     <div class="container fade-up-section">
