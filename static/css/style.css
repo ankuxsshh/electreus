@@ -47,7 +47,7 @@ html {
 }
 
 .navbar-logo {
-    height: 130px;
+    height: 80px;
     width: auto;
 }
 
@@ -66,7 +66,7 @@ html {
 }
 
 .navbar-logo {
-    height: 130px;
+    height: 80px;
     width: auto;
 }
 
@@ -108,7 +108,8 @@ html {
     }
 
     .navbar .navbar-brand .navbar-logo {
-        height: 100px;
+        height: 80px;
+        padding: 10px;
     }
 
     .navbar-toggler {
@@ -207,25 +208,62 @@ html {
 /* Carousel Caption Styles */
 .carousel-caption {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 35%;
+    left: 28%;
+    transform: translateY(-50%);
+    text-align: left;
     color: #fff;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.carousel-caption p2 {
-    font-size: 4.2rem;
+.reliable-heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+
+.btn-gradient {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+}
+
+.btn-gradient:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+.carousel-caption h6 {
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+.carousel-caption p1 {
+    font-size: 1.8rem;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
 }
 
 .carousel-caption p {
     font-size: 2.5rem;
 }
 
-.carousel-caption h5 {
-    font-size: 1.8rem;
-    font-weight: 300;
+.carousel-caption p2 {
+    font-size: 4.2rem;
+}
+
+.carousel-caption p3 {
+    font-size: 2rem;
+}
+
+.carousel-caption p4 {
+    font-size: 2rem;
+}
+
+.carousel-caption p5 {
+    font-size: 1.3rem;
 }
 
 .btn-gradient {
@@ -276,7 +314,7 @@ html {
 @media (max-width: 576px) {
     .carousel-caption {
         top: 38%;
-        left: 6%;
+        left: 3%;
         width: 90%;
     }
 
@@ -292,6 +330,10 @@ html {
         font-size: 1rem;
     }
 
+    .company-location {
+        font-size: 1rem;
+    }
+
     .btn-gradient {
         font-size: 0.9rem;
         padding: 0.4rem 0.6rem;
@@ -302,7 +344,7 @@ html {
     }
 
     .carousel-caption p1 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .carousel-caption h5 {
@@ -310,11 +352,19 @@ html {
     }
 
     .carousel-caption p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .carousel-caption p2 {
         font-size: 2.5rem;
+    }
+
+    .carousel-caption p3 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p4 {
+        font-size: 1.5rem;
     }
 }
 
@@ -1969,7 +2019,7 @@ body {
 }
 
 .loader-logo {
-    height: 130px;
+    height: 80px;
     width: auto;
 }
 
