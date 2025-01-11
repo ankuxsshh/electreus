@@ -16,3 +16,6 @@ def services(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def demo(request):
+    return render(request, 'demo.html')

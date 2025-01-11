@@ -51,25 +51,6 @@ html {
     width: auto;
 }
 
-/* Transparent Navbar */
-.navbar {
-    height: 90px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.976);
-    display: flex;
-    align-items: center;
-}
-
-.navbar .navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-logo {
-    height: 80px;
-    width: auto;
-}
-
 /* Navbar links styling */
 .navbar .nav-link {
     color: rgb(255, 255, 255) !important;
@@ -77,6 +58,7 @@ html {
     margin: 0 20px;
     text-align: center;
     font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar .nav-link:hover {
@@ -114,6 +96,7 @@ html {
 
     .navbar-toggler {
         border: none;
+        z-index: 1050;
     }
 
     .navbar-collapse {
@@ -134,15 +117,6 @@ html {
     .navbar.scrolled .navbar-collapse {
         background-color: rgb(241, 240, 255) !important;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    }
-
-    .navbar.scrolled .nav-link {
-        color: #0034c4 !important;
-    }
-
-    .navbar.scrolled .nav-link:hover {
-        color: black !important;
-        transform: scale(1.12);
     }
 
     .navbar-nav {
@@ -220,6 +194,7 @@ html {
 .reliable-heading {
     font-size: 2.8rem;
     font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -313,13 +288,14 @@ html {
 
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 30%;
+        top: 24%;
         left: 4%;
         width: 90%;
     }
 
     .reliable-heading {
-        font-size: 2.1rem;
+        font-size: 2rem;
+        font-family: 700;
     }
 
     .company-description {
@@ -470,6 +446,7 @@ html {
     color: #0044ff !important;
     font-weight: 500;
     margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-description {
@@ -583,6 +560,7 @@ html {
     font-size: 32px;
     font-weight: 500;
     color: #0044ff !important;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .about-text {
@@ -759,6 +737,7 @@ footer .social-icon:hover {
 
 .experience-cards .card-title {
     font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
@@ -1909,10 +1888,12 @@ body {
 
 .banner-heading {
     font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .banner-subheading {
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Ensure text and image are responsive on smaller screens */
@@ -2162,6 +2143,6 @@ a.btn-gradient:hover {
 .social-icons i:hover {
     transform: scale(1.2);
     /* Slight zoom effect on hover */
-    color: #f39c12;
+    color: #3412f3;
     /* Add a hover color */
 }
