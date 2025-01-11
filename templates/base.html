@@ -18,60 +18,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="static/css/style.css" />
-
   </head>
 
   <body>
     <!-- Loader -->
     <div class="loader-overlay" id="loader">
       <div class="loader">
-        <img src="static/images/logo.png" class="loader-logo" alt="">
-        <br>
+        <img src="static/images/logo.png" class="loader-logo" alt="" />
+        <br />
         <i class="fas fa-circle-notch loader-icon"></i>
       </div>
     </div>
-    
-<!-- Transparent Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
-  <div class="container">
-      <!-- Logo placed on the left -->
-      <a class="navbar-brand" href="{% url 'index' %}"><img src="static/images/logo.png" alt="Electreus Logo" class="navbar-logo" /></a>
-      <!-- Toggle button for mobile view -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span> MENU
-      </button>
-      <!-- Collapsible menu for links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'index' %}">HOME</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'projects' %}">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</nav>
 
+    <!-- Transparent Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+        <!-- Logo placed on the left -->
+        <a class="navbar-brand" href="{% url 'index' %}"><img src="static/images/logo.png" alt="Electreus Logo" class="navbar-logo" /></a>
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> MENU</button>
+        <!-- Collapsible menu for links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index' %}">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'projects' %}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- WhatsApp and Call Buttons -->
-      <a href="tel:+919895533884" class="btn-whatsapp-pulse"  style="background: #000; z-index: 2000;text-decoration: none; text-decoration-line: none;">
-        <span class="fa-solid fa-phone" style="font-size:0.6em;text-decoration: none;text-decoration-line: none;"></span>
-      </a>
-      
-      <a href="https://api.whatsapp.com/send?phone=+919895533884&text=Welcome to Electreus" class="btn-whatsapp-pulse btn-whatsapp-pulse-border" style="z-index: 2000;text-decoration: none; text-decoration-line: none;">
-        <i class="fa-brands fa-whatsapp" style='color:#fffefe; font-size:0.7em;text-decoration: none; text-decoration-line: none;'></i>
-      </a>
+    <div class="position-fixed d-flex flex-column align-items-end" style="bottom: 10px; right: 10px; z-index: 2000;">
+      <!-- WhatsApp Button -->
+      <a href="https://api.whatsapp.com/send?phone=+919895533884&text=Welcome to Electreus" class="btn-whatsapp-pulse btn-whatsapp-pulse-border" style="text-decoration: none;"><i class="fa-brands fa-whatsapp" style="color: #fffefe; font-size: 0.7em;"></i></a>
+      <br>
+      <!-- Call Button -->
+      <a href="tel:+919895533884" class="btn-whatsapp-pulse mb-3" style="background: #000; text-decoration: none;"><span class="fa-solid fa-phone" style="font-size: 0.6em;"></span></a>
+    </div>
 
     {% block content %}
 
@@ -153,6 +149,5 @@
     <script src="static/js/fade.js"></script>
     <script src="static/js/loader.js"></script>
     <script src="static/js/navbar.js"></script>
-
   </body>
 </html>

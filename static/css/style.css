@@ -208,7 +208,7 @@ html {
 /* Carousel Caption Styles */
 .carousel-caption {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 28%;
     transform: translateY(-50%);
     text-align: left;
@@ -313,8 +313,8 @@ html {
 
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 38%;
-        left: 3%;
+        top: 30%;
+        left: 4%;
         width: 90%;
     }
 
@@ -366,6 +366,10 @@ html {
     .carousel-caption p4 {
         font-size: 1.5rem;
     }
+
+    .carousel-caption p5 {
+        font-size: 0.9rem;
+    }
 }
 
 /* Add some space above the content */
@@ -375,13 +379,11 @@ html {
     text-align: center;
 }
 
-/**Whatsapp button ***/
+/** Shared Button Styling ***/
 .btn-whatsapp-pulse {
     background: #25d366;
     color: white;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+    position: relative;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -407,11 +409,9 @@ html {
     }
 }
 
+/** Specific Styling for WhatsApp Button **/
 .btn-whatsapp-pulse-border {
-    bottom: 110px;
-    right: 30px;
     animation-play-state: paused;
-
 }
 
 .btn-whatsapp-pulse-border::before {
@@ -442,6 +442,7 @@ html {
         opacity: 0;
     }
 }
+
 
 /* Updated experience-section */
 .experience-section {
@@ -2148,4 +2149,19 @@ a.btn-gradient:hover {
 
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(146 146 146)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    /* Adjust the size of the icons */
+    color: white;
+    /* Ensure the icons are visible */
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    /* Slight zoom effect on hover */
+    color: #f39c12;
+    /* Add a hover color */
 }
