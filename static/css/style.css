@@ -288,14 +288,14 @@ html {
 
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 24%;
-        left: 4%;
+        top: 30%;
+        left: 2%;
         width: 90%;
     }
 
     .reliable-heading {
         font-size: 2rem;
-        font-family: 700;
+        font-weight: 700;
     }
 
     .company-description {
@@ -694,7 +694,7 @@ footer .social-icon:hover {
 /* Responsive Styles for smaller devices */
 @media (max-width: 768px) {
     footer .row {
-        text-align: center;
+        text-align: left;
     }
 
     footer .col-md-3 {
@@ -709,7 +709,7 @@ footer .social-icon:hover {
     /* Adjust the social icons row on small screens */
     footer .social-icons-row {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         gap: 20px;
         margin-bottom: 10px;
     }
